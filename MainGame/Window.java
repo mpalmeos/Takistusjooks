@@ -1,10 +1,22 @@
 package Takistusjooks.MainGame;
 
-import javax.swing.*;
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
+
+import java.awt.Rectangle;
 
 /**
  * Created by Maie on 08/10/2016.
  */
-public class Window {
+public class Window extends Application {
+
+    @Override
+    public void start (Stage primaryStage) {
+        primaryStage.setTitle("Takistusjooks");
+        primaryStage.show();
     }
+
+
 }
