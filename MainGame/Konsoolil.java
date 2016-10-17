@@ -31,11 +31,11 @@ public class Konsoolil {
         }
     }
 
-    private static void gameMove() {            //mängulaua meetod
-        for (int i = 0; i < WIDTH; i++) {       //
-            if(lvl[1][i] == 1) {
-                if(i == 0) {
-                    lvl[1][WIDTH-1] = 1;
+    private static void gameMove() {          //mängulaua meetod
+        for (int i = 0; i < WIDTH; i++) {     // i on alguses 0. Kui i on väiksem kui mängu laius, siis lisa 1 juurde.
+            if(lvl[1][i] == 1) {              // kui positsioonil 1;i on 1, siis:
+                if(i == 0) {                  // kui i on seejuures 0, siis
+                    lvl[1][WIDTH-1] = 1;      // mine tagantpoolt ühe võrra ettepoole
                 } else {
                     lvl[1][i - 1] = 1;
                 }
